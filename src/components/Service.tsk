@@ -1,0 +1,17 @@
+public findListById(listId : number) {
+  let list ;
+ // let id = parseInt(listId,10);
+  // console.log("Length"+Store.length);
+  for(const listItem of Store) {
+ // console.log("aa " +listItem.getId());
+ // console.log("param ID: "+listId);
+  
+  if(listItem.getId() === listId ) {
+  list = listItem;
+  alert("Name is: "+list.getName());
+  }
+  
+  
+  }
+  return list;
+  }
